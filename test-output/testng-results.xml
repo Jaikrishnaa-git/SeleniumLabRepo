@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-26T15:22:54 IST" name="Suite" finished-at="2025-08-26T15:22:54 IST" duration-ms="66">
+    <groups>
+      <group name="regression">
+        <method signature="TC010_groups.test2()[pri:0, instance:Package1.TC010_groups@18078bef]" name="test2" class="Package1.TC010_groups"/>
+        <method signature="TC010_groups.test3()[pri:0, instance:Package1.TC010_groups@18078bef]" name="test3" class="Package1.TC010_groups"/>
+      </group> <!-- regression -->
+    </groups>
+    <test started-at="2025-08-26T15:22:54 IST" name="Test" finished-at="2025-08-26T15:22:54 IST" duration-ms="66">
+      <class name="Package1.TC010_groups">
+        <test-method signature="test2()[pri:0, instance:Package1.TC010_groups@18078bef]" started-at="2025-08-26T15:22:54 IST" name="test2" finished-at="2025-08-26T15:22:54 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:0, instance:Package1.TC010_groups@18078bef]" started-at="2025-08-26T15:22:54 IST" name="test3" finished-at="2025-08-26T15:22:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+      </class> <!-- Package1.TC010_groups -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
