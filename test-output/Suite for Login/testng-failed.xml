@@ -4,19 +4,19 @@
   <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="TestcaseAutomation.TC001_validCredentials">
+      <class name="TestcaseAutomation.TC_regr_core_001">
         <methods>
           <include name="beforeClass"/>
-          <include name="f" invocation-numbers="1 2 3"/>
+          <include name="f" invocation-numbers="2 3"/>
           <include name="beforeMethod"/>
-          <include name="beforeSuite"/>
           <include name="afterClass"/>
-          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
           <include name="afterTest"/>
-          <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
         </methods>
-      </class> <!-- TestcaseAutomation.TC001_validCredentials -->
+      </class> <!-- TestcaseAutomation.TC_regr_core_001 -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite for Login] -->
