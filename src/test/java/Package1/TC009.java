@@ -28,6 +28,7 @@ import org.testng.annotations.AfterSuite;
 
 public class TC009{
 	WebDriver driver;
+	
   @Test(dataProvider="logindata")
   public void f(String username, String password) {
 	  System.out.println("This is the test");
@@ -90,6 +91,9 @@ public class TC009{
  
   @DataProvider
   public Object[][] logindata() {
+	  
+	 
+	 
     return new Object[][] {
       new Object[] { "Admin", "admin123" },
       new Object[] { "pooja", "welcome" },

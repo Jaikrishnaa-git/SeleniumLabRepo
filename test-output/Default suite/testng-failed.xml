@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Lab_Programs.Lab4">
+      <class name="TestcaseAutomation.TC001_validCredentials">
         <methods>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
+          <include name="beforeClass"/>
+          <include name="f"/>
+          <include name="beforeMethod"/>
           <include name="beforeSuite"/>
           <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
+          <include name="afterTest"/>
           <include name="afterSuite"/>
-          <include name="f" invocation-numbers="0 1"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- Lab_Programs.Lab4 -->
+      </class> <!-- TestcaseAutomation.TC001_validCredentials -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
