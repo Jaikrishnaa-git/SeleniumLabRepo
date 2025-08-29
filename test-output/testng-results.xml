@@ -1,173 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-28T18:12:26 IST" name="Suite for Login" finished-at="2025-08-28T18:13:31 IST" duration-ms="64784">
+  <suite started-at="2025-08-29T16:52:54 IST" name="Default suite" finished-at="2025-08-29T16:53:19 IST" duration-ms="24667">
     <groups>
     </groups>
-    <test started-at="2025-08-28T18:12:26 IST" name="ChromeTest" finished-at="2025-08-28T18:13:31 IST" duration-ms="64784">
-      <class name="TestcaseAutomation.TC_regr_core_002">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:TestcaseAutomation.TC_regr_core_002@3857f613]" started-at="2025-08-28T18:12:26 IST" name="beforeSuite" finished-at="2025-08-28T18:12:26 IST" duration-ms="168" status="PASS">
+    <test started-at="2025-08-29T16:52:54 IST" name="Default test" finished-at="2025-08-29T16:53:19 IST" duration-ms="24667">
+      <class name="com.orangehrm.tests.Login_orangehrm">
+        <test-method is-config="true" signature="setupreport()[pri:0, instance:com.orangehrm.tests.Login_orangehrm@2002fc1d]" started-at="2025-08-29T16:52:54 IST" name="setupreport" finished-at="2025-08-29T16:52:54 IST" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestcaseAutomation.TC_regr_core_002@3857f613]" started-at="2025-08-28T18:12:26 IST" name="beforeTest" finished-at="2025-08-28T18:12:26 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- setupreport -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.Login_orangehrm@2002fc1d]" started-at="2025-08-29T16:52:55 IST" name="setup" finished-at="2025-08-29T16:52:56 IST" duration-ms="1197" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestcaseAutomation.TC_regr_core_002@3857f613]" started-at="2025-08-28T18:12:26 IST" name="beforeClass" finished-at="2025-08-28T18:12:26 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TestcaseAutomation.TC_regr_core_002@3857f613]" started-at="2025-08-28T18:12:27 IST" name="beforeMethod" finished-at="2025-08-28T18:12:28 IST" duration-ms="1221" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="verifylogin(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.Login_orangehrm@2002fc1d]" started-at="2025-08-29T16:52:56 IST" name="verifylogin" data-provider="logindata" finished-at="2025-08-29T16:53:03 IST" duration-ms="7384" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:TestcaseAutomation.TC_regr_core_002@3857f613]" started-at="2025-08-28T18:12:28 IST" name="f" data-provider="logindata" finished-at="2025-08-28T18:12:49 IST" duration-ms="20590" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[jaikrishnaagit@gmail.com]]>
+                <![CDATA[Admin]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[qwerty]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Login failed - Logout link not found.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Login failed - Logout link not found.
-at org.testng.Assert.fail(Assert.java:110)
-at TestcaseAutomation.TC_regr_core_002.f(TC_regr_core_002.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestcaseAutomation.TC_regr_core_002@3857f613]" started-at="2025-08-28T18:12:49 IST" name="afterMethod" finished-at="2025-08-28T18:12:49 IST" duration-ms="150" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TestcaseAutomation.TC_regr_core_002@3857f613]" started-at="2025-08-28T18:12:49 IST" name="beforeMethod" finished-at="2025-08-28T18:12:49 IST" duration-ms="619" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
+                <![CDATA[admin123]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:TestcaseAutomation.TC_regr_core_002@3857f613]" started-at="2025-08-28T18:12:49 IST" name="f" data-provider="logindata" finished-at="2025-08-28T18:13:31 IST" duration-ms="41441" status="FAIL">
+        </test-method> <!-- verifylogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.orangehrm.tests.Login_orangehrm@2002fc1d]" started-at="2025-08-29T16:53:03 IST" name="teardown" finished-at="2025-08-29T16:53:04 IST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.Login_orangehrm@2002fc1d]" started-at="2025-08-29T16:53:04 IST" name="setup" finished-at="2025-08-29T16:53:04 IST" duration-ms="683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifylogin(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.Login_orangehrm@2002fc1d]" started-at="2025-08-29T16:53:04 IST" name="verifylogin" data-provider="logindata" finished-at="2025-08-29T16:53:11 IST" duration-ms="6708" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[jaikrishnaa1205@gmail.com]]>
+                <![CDATA[pooja]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[qw123dfgrg]]>
+                <![CDATA[dwd]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Login failed - Logout link not found.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Login failed - Logout link not found.
-at org.testng.Assert.fail(Assert.java:110)
-at TestcaseAutomation.TC_regr_core_002.f(TC_regr_core_002.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestcaseAutomation.TC_regr_core_002@3857f613]" started-at="2025-08-28T18:13:31 IST" name="afterMethod" finished-at="2025-08-28T18:13:31 IST" duration-ms="211" status="PASS">
+        </test-method> <!-- verifylogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.orangehrm.tests.Login_orangehrm@2002fc1d]" started-at="2025-08-29T16:53:11 IST" name="teardown" finished-at="2025-08-29T16:53:11 IST" duration-ms="164" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestcaseAutomation.TC_regr_core_002@3857f613]" started-at="2025-08-28T18:13:31 IST" name="afterClass" finished-at="2025-08-28T18:13:31 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.tests.Login_orangehrm@2002fc1d]" started-at="2025-08-29T16:53:11 IST" name="setup" finished-at="2025-08-29T16:53:12 IST" duration-ms="629" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestcaseAutomation.TC_regr_core_002@3857f613]" started-at="2025-08-28T18:13:31 IST" name="afterTest" finished-at="2025-08-28T18:13:31 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="verifylogin(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.Login_orangehrm@2002fc1d]" started-at="2025-08-29T16:53:12 IST" name="verifylogin" data-provider="logindata" finished-at="2025-08-29T16:53:19 IST" duration-ms="6969" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jai]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sad]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:TestcaseAutomation.TC_regr_core_002@3857f613]" started-at="2025-08-28T18:13:31 IST" name="afterSuite" finished-at="2025-08-28T18:13:31 IST" duration-ms="203" status="PASS">
+        </test-method> <!-- verifylogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.orangehrm.tests.Login_orangehrm@2002fc1d]" started-at="2025-08-29T16:53:19 IST" name="teardown" finished-at="2025-08-29T16:53:19 IST" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- TestcaseAutomation.TC_regr_core_002 -->
-    </test> <!-- ChromeTest -->
-  </suite> <!-- Suite for Login -->
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="flushreport()[pri:0, instance:com.orangehrm.tests.Login_orangehrm@2002fc1d]" started-at="2025-08-29T16:53:19 IST" name="flushreport" finished-at="2025-08-29T16:53:19 IST" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushreport -->
+      </class> <!-- com.orangehrm.tests.Login_orangehrm -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
