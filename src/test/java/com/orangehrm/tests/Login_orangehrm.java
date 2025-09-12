@@ -12,7 +12,7 @@ import com.orangehrm.Utilites.ScreenshotUtilities;
  
 public class Login_orangehrm extends BaseTest{
 	
-	 static String projectpath=System.getProperty("user.dir")  ;
+	 static String projectpath=System.getProperty("user.dir");
 	@Test(dataProvider="logindata")
 	public void verifylogin(String username, String password) throws IOException, InterruptedException
 	{    
@@ -38,5 +38,4 @@ public class Login_orangehrm extends BaseTest{
 	{
 		return ExcelUtility.testData(projectpath+"\\src\\test\\resources\\Testdata\\data.xlsx", "Sheet1");
 	}
- 
 }

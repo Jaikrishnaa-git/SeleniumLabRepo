@@ -45,12 +45,18 @@ public class TC009{
 		}
 		driver.findElement(By.name("password")).sendKeys(password);
 		driver.findElement(By.name("username")).sendKeys(Keys.ENTER);
-		WebElement dashboard = driver.findElement(By.xpath("//h6[text()='Dashboard']"));
-		if(dashboard.isDisplayed())
-		{
-			Assert.assertTrue(true);
+		try {
+			WebElement dashboard = driver.findElement(By.xpath("//h6[text()='Dashboard']"));
+			if( dashboard.isDisplayed())
+			{
+				Assert.assertTrue(true);
+			}
+			else {
+				Assert.assertTrue(false);
+			}
 		}
-		else {
+		catch(Exception e)
+		{
 			Assert.assertTrue(false);
 		}
 
